@@ -1,0 +1,31 @@
+{
+  "name": "Simon-Ghost-MD",
+  "description": "Javascript WhatsApp bot made by Ghost-MD",
+  "logo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapers.com%2Fcall-of-duty-ghost&psig=AOvVaw1eI6ZqCt2Qrq1rbcUZxk83&ust=1733117168088000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDu8-DqhYoDFQAAAAAdAAAAABAE",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "ALIVE_IMG": {
+      "description": "Put your alive img here.",
+      "required": true
+    },
+    
+    "ALIVE_MSG": {
+      "description": "Put your alive msg here.",
+      "required": true
+    }   
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
